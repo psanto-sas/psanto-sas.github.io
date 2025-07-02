@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    border: solid #000;
+    margin: 5rem 0 0 0;
+    background-color: #000;
+  }
+ 
+  .contactoSoporte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .tituloFooter {
+    color: var(--color-1);
+    font-family: var(--fuente-seccion);
+    font-weight: var(--font-weight-titulos);
+    font-size: 2rem;
+    align-items: start;
+    margin-bottom: 20px;
+    
+  }
+  p.datosContacto {
+    color: var(--color-2);
+    font-family: var(--fuente-cuerpo);
+    font-weight: 400;
+    font-size: var(--fuente-tamaño-cuerpo);
+  }
+p.datosSoporte {
+    color: var(--color-2);
+    font-family: var(--fuente-cuerpo);
+    font-weight: 400;
+    font-size: var(--fuente-tamaño-cuerpo);
+  }
+
+  p.datosSoporte > a {
+    
+    color: var(--color-2);
+    font-weight: var(--font-weight-cuerpo);
+    text-decoration: none;
+  }
+   p.datosSoporte > a:hover {
+    color: var(--color-1);
+   }

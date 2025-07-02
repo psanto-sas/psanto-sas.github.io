@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Soporte</title>
+    <link rel="stylesheet" href="../estilos/styles.css" />
+    <link rel="stylesheet" href="../estilos/soporteTecnico.css" />
+    <!--link a fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Mandali&display=swap" 
+    rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--vinculacion a booststrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img
+            id="logo"
+            src="../imagenes/logo realtech.png"
+            alt="Logo RealTech"
+          />
+        </a>
+      </div>
+
+      <div class="BarraBusqueda">
+        <input id="inputBuscar" placeholder="Buscar productos" />
+        <button id="botonBuscar">
+          <img src="../imagenes/icons8-search-50.png" id="pngBuscar" />
+        </button>
+      </div>
+      <div class="carrito">
+        <button id="botonCarrito"> <img src="../imagenes/icons8-shopping-cart-48.png" id="pngCarrito" /> </button>
+      </div>
+<div class="botonUser"> 
+  <button id="botonUser"> 
+  <p class="textoIconoUser">Ingresar</p>
+  <img src="../imagenes/icons8-user-60.png" id="imagenIconoUser" alt="userIcono"></button>
+</div>
+
+      <nav class="linkSecciones">
+        <ul id="listaSecciones">
+          <li><a href="">Ofertas</a></li>
+          <li>Componentes PC
+            <ul class="subListaDropdown">
+              <li><a href="">Procesadores</a></li>
+              <li><a href="">Placas de Video</a></li>
+              <li><a href="">Motherboards</a></li>
+              <li><a href="">Memorias Ram</a></li>
+              <li><a href="">Almacenamiento</a></li>
+              <li><a href="">Fuentes de Poder</a></li>
+              <li><a href="">Gabinetes</a></li>
+              <li><a href="">Disipadores</a></li>
+            </ul>
+          </li>
+          <li><a href="">PCs Armadas</a>
+            <ul class="subListaDropdown">
+              <li><a href="">PCs Intel</a></li>
+              <li><a href="">PCs AMD</a></li>
+            </ul>
+          </li>
+          <li>Perifericos
+            <ul class="subListaDropdown">
+              <li><a href="">Teclados</a></li>
+              <li><a href="">Mouses</a></li>
+              <li><a href="">Pads</a></li>
+              <li><a href="">Auriculares</a></li>
+              <li><a href="">Microfonos</a></li>
+              <li><a href="">Camaras Web</a></li>
+              <li><a href="">Monitores</a></li>
+            </ul>
+          </li>
+          <li><a href="">Mi Cuenta</a>
+            <ul class="subListaDropdown">
+              <li><a href="">Iniciar Sesion</a></li>
+              <li><a href="">Historial de Compras</a></li>
+              <li><a href="">Favoritos</a></li>
+            </ul>
+          </li>
+          <li><a href="galeria.html">Clientes Satisfechos</a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <main>
+
+<section class="formulario">
+<h1 class="tituloFormSprt">Formulario de Soporte Tecnico</h1>
+<p class="introForm">Respondiendo el siguiente formulario, podremos solucionar su problema a la brevedad:</p>
+
+<form id="formularioSoporte" >
+<div id="formulario">
+
+  <div class="datosPersonales">
+    <label for="inputNombreCompletoSprt">Ingrese su nombre completo:</label>
+    <input type="text" name="Nombre Completo" placeholder="Nombre Completo" id="inputNombreCompletoSprt" required>
+  </div>
+  <div class="datosPersonales">
+   <label for="inputTelefonoSprt">Ingrese un numero de telefono donde lo podamos contactar por WhatsApp:</label>
+    <input type="text" name="Telefono" placeholder="Telefono" id="inputTelefonoSprt" autocomplete="off" required>
+  </div>
+  <div class="datosPersonales">
+    <label for="inputEmailSprt">Ingrese una direccion de email donde lo podamos contactar:</label>
+    <input type="text" name="Email" placeholder="Email" id  ="inputEmailSprt" required autocomplete="off"> 
+  </div>
+    <div class="seleccionProblema">
+      <label for="selectProblema">Seleccione el tipo de problema que tiene:</label>
+      <select id="selectProblema">
+        <option value="Problema de Hardware">Problema de Hardware</option>
+        <option value="Problema de Software">Problema de Software</option>
+        <option value="Problema con el Envio">Problema con el Envio</option>
+        <option value="Problema con el Pago">Problema con el Pago</option>
+        <option value="Otro">Otro</option>
+      </select>
+ 
+       <!-- Campo de texto oculto al inicio -->
+      <div id="otroInput" >
+        <label for="otroTexto">Especificá:</label>
+        <input type="text" id="otroTexto" name="otroTexto" required>
+      </div> 
+     
+    </div>
+      <div class="explicacionProblema">
+        <label for="explicacionProblema">Expliquenos detalladamente su problema:</label>
+        <textarea id="explicacionProblema" name="explicacionProblema" rows="8" cols="70" placeholder="Escriba aqui"></textarea>
+      </div>
+      <div class="preferenciaContacto">
+        <p class="textoPreferenciaContacto">¿Por cual medio prefiere que lo contactemos?</p>
+        <div class="inputRadio">
+          <input type="radio" id="Telefono" name="preferencia" value="Telefono" checked autocomplete="off"/>
+          <label for="Telefono">WhatsApp</label>
+        </div>
+        <div class="inputRadio">
+          <input type="radio" id="Email" name="preferencia" value="Email" autocomplete="off" />
+          <label for="Email">Email</label>
+        </div>
+      </div>
+      <div class="botonSubmitReset">
+        <button type="submit" id="botonEnviar">Enviar</button>
+        <button type="reset" id="botonReset">Borrar Respuestas</button>
+      </div>
+</div>
+
+</div>
+</form>
+
+</section>
+
+    </main>
+    <footer>
+        <div class="contactoSoporte">
+        <h3 class="tituloFooter">Contacto:</h3>
+          <p class="datosContacto">Direccion: Avenida Rivadavia 2341</p>
+          <p class="datosContacto">WhatsApp: 15-5340-2231</p>
+          <p class="datosContacto">Mail: realtechsprt@gmail.com</p>
+        </div>  
+        <div class="contactoSoporte">
+          <h3 class="tituloFooter">Soporte:</h3>
+            <p class="datosSoporte"><a href="soporteTecnico.html">Formulario de Soporte Tecnico</a></p>
+            <p class="datosSoporte">WhatsApp de Soporte Tecnico: 15-5340-7392</p>
+  
+        </div>
+    </footer>
+    <script src="../js/formulario.js"></script>
+</body>
+</html>

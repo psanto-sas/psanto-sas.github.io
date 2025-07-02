@@ -1,0 +1,172 @@
+
+@import url("../estilos/cosasroot.css");
+@import url("../estilos/header.css");
+@import url("../estilos/footer.css");
+
+html {
+  overflow-x: hidden;
+  
+}
+
+body { 
+  background-color: #061626;
+  width: 99vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.textoInicial {
+  margin-top: 0.9rem;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 400;
+  font-style:normal;
+  color: var(--color-2);
+  font-size: var(--fuente-tamaño-cuerpo2);    
+}
+
+#carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 99vw;
+}
+.img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+#flechaIzquierda {
+  position: absolute;
+} 
+#flechaDerecha {
+  position: absolute;
+  left: 97%;
+}
+
+.carouselImg {
+  height: 570px;
+  width: 99vw;
+}
+
+.carouselPages {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.carouselPages p {
+  font-size: 50px;
+  font-weight: 450;
+  color: var(--color-2);
+  margin: -30px 0 0 0;
+}
+.bold {
+  font-weight: 800 !important;
+  margin-left:5px!important;
+  margin-right:5px!important;
+  color: green !important;
+}
+
+div.separador {
+    margin-left: 42%;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  h2.titulo {
+    font-family: var(--fuente-seccion);
+    font-weight: var(--font-weight-encabezados);
+    font-size: var(--fuente-tamaño-titulos);
+    color: var(--color-1);
+    margin: 0;
+    
+  }
+
+section.cardProductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    gap: 10px;
+  }
+div.wholeCard {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    padding:  0 1em 0 1em;
+    margin-top: 10px;
+    height: 320px;
+    width: 100%;
+    transition: 0.2s ease-in;
+}
+
+div.wholeCard:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.imageCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    width: 9vw;
+    height: 10vw;
+    background-color: #fff;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h3.nombreProducto {
+    font-family: var(--fuente-cuerpo);
+    font-weight: var(--font-weight-cuerpo);
+    font-size: var(--fuente-tamaño-cuerpo);
+    color: var(--color-2);
+    width: 10vw;
+    height: 5vh;
+    margin: 0 0 0 0;
+  }
+
+h3.precioProducto {
+    font-family: var(--fuente-seccion);
+    font-weight: var(--font-weight-titulos);
+    font-size: 1.1vw;
+    color: var(--color-2);
+    width: 10vw;
+    margin: 0;
+  }
+
+  #sidebarElementos {
+    display: flex;
+    flex-direction: column;
+    font-family: "roboto", sans-serif;
+    font-weight: --font-weight-filtros;
+    color: var(--color-2);
+  }
+
+ 
+  

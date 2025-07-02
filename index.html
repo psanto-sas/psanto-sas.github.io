@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="../estilos/styles.css" />
+    <!--link a fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Mandali&display=swap" 
+    rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+
+</head>
+<body>
+
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="../imagenes/logo realtech.png"
+            alt="Logo RealTech"
+          />
+        </a>
+      </div>
+
+      <div class="BarraBusqueda">
+        <input id="inputBuscar" placeholder="Buscar productos" />
+        <button id="botonBuscar">
+          <img src="../imagenes/icons8-search-50.png" id="pngBuscar" />
+        </button>
+      </div>
+      <div class="carrito">
+        <button id="botonCarrito"> <img src="../imagenes/icons8-shopping-cart-48.png" id="pngCarrito" /> </button>
+      </div>
+<div class="botonUser"> 
+  <button id="botonUser"> 
+  <p class="textoIconoUser">Ingresar</p>
+  <img src="../imagenes/icons8-user-60.png" id="imagenIconoUser" alt="userIcono"></button>
+</div>
+
+      <nav class="linkSecciones">
+        <ul id="listaSecciones">
+          <li><a href="">Ofertas</a></li>
+          <li>Componentes PC
+            <ul class="subListaDropdown">
+              <li><a href="">Procesadores</a></li>
+              <li><a href="">Placas de Video</a></li>
+              <li><a href="">Motherboards</a></li>
+              <li><a href="">Memorias Ram</a></li>
+              <li><a href="">Almacenamiento</a></li>
+              <li><a href="">Fuentes de Poder</a></li>
+              <li><a href="">Gabinetes</a></li>
+              <li><a href="">Disipadores</a></li>
+            </ul>
+          </li>
+          <li><a href="">PCs Armadas</a>
+            <ul class="subListaDropdown">
+              <li><a href="">PCs Intel</a></li>
+              <li><a href="">PCs AMD</a></li>
+            </ul>
+          </li>
+          <li>Perifericos
+            <ul class="subListaDropdown">
+              <li><a href="">Teclados</a></li>
+              <li><a href="">Mouses</a></li>
+              <li><a href="">Pads</a></li>
+              <li><a href="">Auriculares</a></li>
+              <li><a href="">Microfonos</a></li>
+              <li><a href="">Camaras Web</a></li>
+              <li><a href="">Monitores</a></li>
+            </ul>
+          </li>
+          <li><a href="">Mi Cuenta</a>
+            <ul class="subListaDropdown">
+              <li><a href="">Iniciar Sesion</a></li>
+              <li><a href="">Historial de Compras</a></li>
+              <li><a href="">Favoritos</a></li>
+            </ul>
+          </li>
+          <li><a href="html/galeria.html">Clientes Satisfechos</a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <main>
+      <p class="textoInicial">Venta de componentes de computadoras y perifericos.</p>
+
+      <div id="carousel">
+        
+        <div class="flechaIzquierda">
+        <img id="flechaIzquierda" src="../imagenes/icons8-flecha-izquierda.png" alt="flecha izquierda" loading="lazy">
+        </div>
+        <div class="carouselImgsContainer">
+          <div class="Img">
+            <img src="../imagenes/carrousel-1.webp" id="imgCarousel" class="carouselImg" alt="imagenCarousel1">
+          </div>
+          
+        </div>
+        <div class="flechaDerecha">
+        <img id="flechaDerecha" src="../imagenes/icons8-flecha-derecha.png"alt="flecha derecha" loading="lazy"> 
+        </div>
+      </div>
+      <div class="carouselPages" id="puntos">
+            
+      </div>
+
+      <div class="separador">
+        <h2 class="titulo">Los Mejores Productos</h2>    
+      </div>
+    <section class="cardProductos">
+      <div class="flechaIzquierda">
+        <img class="imagenIzquierda" src="../imagenes/icons8-flecha-izquierda.png">
+      </div>
+    
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/ryzen9 7900X.png" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">Procesador Amd Ryzen 9 7900X 5.6 Ghz</h3>
+        <h3 class="precioProducto">$ 600.000</h3> 
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/MB MSI B650 gaming plus wifi.png" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">Motherboard AM5 Msi B650 GAMING PLUS WIFI</h3>
+        <h3 class="precioProducto">$ 280.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/Ryzen5 5600gt.jpg" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">Procesador Amd Ryzen 5 5600GT 4.6 Ghz</h3>
+        <h3 class="precioProducto">$ 175.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/RTX 3060 ASUS 12gb gddr6.webp" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">Placa de Video Asus Geforce Dual RTX 3060 OC V2 12GB GDDR6 LHR</h3>
+        <h3 class="precioProducto">$ 450.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img  class="imageCard" src="../imagenes/AMD Radeon ASUS PRIME 9070 OC 16Gb gddr6.png" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">Placa de Video AMD Asus PRIME RX 9070  OC 16GB GDDR6</h3>
+        <h3 class="precioProducto">$ 850.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img  class="imageCard" src="../imagenes/Intel I7 12700K.jpg" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">Procesador Intel I7-12700K 5.0 Ghz</h3>
+        <h3 class="precioProducto">$ 390.000</h3>
+      </div>
+    </div>
+    <div class="flechaDerecha">
+      <img class="imagenDerecha" src="../imagenes/icons8-flecha-derecha.png">
+    </div>
+    </section>
+
+    <div class="separador">
+      <h2 class="titulo">PCs Armadas</h2>
+    </div>
+
+    <section class="cardProductos">
+      <div class="flechaIzquierda">
+        <img class="imagenIzquierda" src="../imagenes/icons8-flecha-izquierda.png">
+      </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/PC I5 10400 8gb 1tb.jpg" alt="Imagen del producto" />
+      </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">PC Armada Intel Core i5 10400 8Gb 1Tb</h3>
+        <h3 class="precioProducto">$ 390.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/Pc Ryzen 7 5700G  32GB 1TB.jpg" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">PC Armada Ryzen 7 5700G 32GB 1TB</h3>
+        <h3 class="precioProducto">$ 528.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/PC Ryzen 5 5600XT 16Gb 1Tb RTX3060.jpg" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">PC Armada Ryzen 7 5700 32Gb 1Tb RTX3050</h3>
+        <h3 class="precioProducto">$ 900.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/PC Ryzen 5 5600XT 16Gb 1Tb RTX3060.jpg" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">PC Armada AMD Ryzen 5 5600XT 16Gb RTX3060 1TB</h3>
+        <h3 class="precioProducto">$ 1.110.000</h3>
+      </div>
+    </div>
+    <div class="wholeCard">
+      <div class="containerImageCard">
+        <img class="imageCard" src="../imagenes/PC I5 10400 16Gb RTX4060 960Gb.jpg" alt="Imagen del producto" />
+        </div>
+      <div class="cardInfo">
+        <h3 class="nombreProducto">PC Armada Intel Core i5 10400 16Gb RTX4060 960Gb</h3>
+        <h3 class="precioProducto">$ 1.200.000</h3>
+      </div>
+    </div>
+    <div class="flechaDerecha">
+      <img class="imagenDerecha" src="../imagenes/icons8-flecha-derecha.png">
+    </div>
+    </section>
+  </main>
+    <footer>
+      <div class="contactoSoporte">
+       <h3 class="tituloFooter">Contacto:</h3>
+        <p class="datosContacto">Direccion: Avenida Rivadavia 2341</p>
+        <p class="datosContacto">WhatsApp: 15-5340-2231</p>
+        <p class="datosContacto">Mail: realtechsprt@gmail.com</p>
+      </div>  
+      <div class="contactoSoporte">
+        <h3 class="tituloFooter">Soporte:</h3>
+          <p class="datosSoporte"><a href="html/soporteTecnico.html">Formulario de Soporte Tecnico</a></p>
+          <p class="datosSoporte">WhatsApp de Soporte Tecnico: 15-5340-7392</p>
+
+      </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
